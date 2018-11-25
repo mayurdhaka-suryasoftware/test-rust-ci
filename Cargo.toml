@@ -4,3 +4,7 @@ version = "0.1.0"
 authors = ["mayurdhaka-suryasoftware <mayur.d@surya-soft.com>"]
 
 [dependencies]
+
+[features]
+# Treat warnings as a build error.
+strict-build = []
