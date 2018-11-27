@@ -6,6 +6,11 @@ jobs:
     steps:
     - checkout
     - run:
+        name: Embedded Build
+        command: |
+          cd embedded-rust-proj
+          cargo build
+    - run:
         name: Setup Rust Fmt
         command: |
           rustup component add rustfmt-preview
